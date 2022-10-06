@@ -1,0 +1,5 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/aartung/Projects/firstordefaultvssingleordefault/firstordefaultvssingleordefault/bin/Release/net6.0/b918a037-7f23-43da-b1d8-e70ec15ad57b

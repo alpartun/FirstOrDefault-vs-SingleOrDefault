@@ -1,0 +1,115 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/aartung/Projects/firstordefaultvssingleordefault/firstordefaultvssingleordefault/bin/Release/net6.0/937f59f3-61bd-4257-9d9b-693c827c56dc
+// command took 0,98s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/aartung/Projects/firstordefaultvssingleordefault/firstordefaultvssingleordefault/bin/Release/net6.0/937f59f3-61bd-4257-9d9b-693c827c56dc
+// command took 2,09s and exited with 0
+// ***** Done, took 00:00:03 (3.13 sec)   *****
+// Found 2 benchmarks:
+//   BenchmarkLINQPerformance.Single: DefaultJob
+//   BenchmarkLINQPerformance.First: DefaultJob
+
+// **************************
+// Benchmark: BenchmarkLINQPerformance.Single: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 937f59f3-61bd-4257-9d9b-693c827c56dc.dll --benchmarkName firstordefaultvssingleordefault.BenchmarkLINQPerformance.Single --job Default --benchmarkId 0 in /Users/aartung/Projects/firstordefaultvssingleordefault/firstordefaultvssingleordefault/bin/Release/net6.0/937f59f3-61bd-4257-9d9b-693c827c56dc/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.9 (6.0.922.41905), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 288375.00 ns, 288.3750 us/op
+WorkloadJitting  1: 1 op, 10465898750.00 ns, 10.4659 s/op
+
+WorkloadWarmup   1: 1 op, 10436694000.00 ns, 10.4367 s/op
+WorkloadWarmup   2: 1 op, 10538113625.00 ns, 10.5381 s/op
+WorkloadWarmup   3: 1 op, 10367564583.00 ns, 10.3676 s/op
+WorkloadWarmup   4: 1 op, 10365282708.00 ns, 10.3653 s/op
+WorkloadWarmup   5: 1 op, 10303147458.00 ns, 10.3031 s/op
+WorkloadWarmup   6: 1 op, 10300360792.00 ns, 10.3004 s/op
+WorkloadWarmup   7: 1 op, 10476775875.00 ns, 10.4768 s/op
+WorkloadWarmup   8: 1 op, 10414293542.00 ns, 10.4143 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 10449746917.00 ns, 10.4497 s/op
+WorkloadActual   2: 1 op, 10342393542.00 ns, 10.3424 s/op
+WorkloadActual   3: 1 op, 10322421083.00 ns, 10.3224 s/op
+WorkloadActual   4: 1 op, 10410403041.00 ns, 10.4104 s/op
+WorkloadActual   5: 1 op, 10349503250.00 ns, 10.3495 s/op
+WorkloadActual   6: 1 op, 10300158042.00 ns, 10.3002 s/op
+WorkloadActual   7: 1 op, 10333176625.00 ns, 10.3332 s/op
+WorkloadActual   8: 1 op, 10307125333.00 ns, 10.3071 s/op
+WorkloadActual   9: 1 op, 10327687459.00 ns, 10.3277 s/op
+WorkloadActual  10: 1 op, 10324413458.00 ns, 10.3244 s/op
+WorkloadActual  11: 1 op, 10328540333.00 ns, 10.3285 s/op
+WorkloadActual  12: 1 op, 10318091791.00 ns, 10.3181 s/op
+WorkloadActual  13: 1 op, 10319165208.00 ns, 10.3192 s/op
+WorkloadActual  14: 1 op, 10321427084.00 ns, 10.3214 s/op
+WorkloadActual  15: 1 op, 10323950417.00 ns, 10.3240 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 10342393542.00 ns, 10.3424 s/op
+WorkloadResult   2: 1 op, 10322421083.00 ns, 10.3224 s/op
+WorkloadResult   3: 1 op, 10349503250.00 ns, 10.3495 s/op
+WorkloadResult   4: 1 op, 10300158042.00 ns, 10.3002 s/op
+WorkloadResult   5: 1 op, 10333176625.00 ns, 10.3332 s/op
+WorkloadResult   6: 1 op, 10307125333.00 ns, 10.3071 s/op
+WorkloadResult   7: 1 op, 10327687459.00 ns, 10.3277 s/op
+WorkloadResult   8: 1 op, 10324413458.00 ns, 10.3244 s/op
+WorkloadResult   9: 1 op, 10328540333.00 ns, 10.3285 s/op
+WorkloadResult  10: 1 op, 10318091791.00 ns, 10.3181 s/op
+WorkloadResult  11: 1 op, 10319165208.00 ns, 10.3192 s/op
+WorkloadResult  12: 1 op, 10321427084.00 ns, 10.3214 s/op
+WorkloadResult  13: 1 op, 10323950417.00 ns, 10.3240 s/op
+
+// AfterAll
+// Benchmark Process 30932 has exited with code 0.
+
+Mean = 10.324 s, StdErr = 0.004 s (0.03%), N = 13, StdDev = 0.013 s
+Min = 10.300 s, Q1 = 10.319 s, Median = 10.324 s, Q3 = 10.329 s, Max = 10.350 s
+IQR = 0.009 s, LowerFence = 10.305 s, UpperFence = 10.343 s
+ConfidenceInterval = [10.309 s; 10.340 s] (CI 99.9%), Margin = 0.016 s (0.15% of Mean)
+Skewness = 0.08, Kurtosis = 2.55, MValue = 2
+
+// ** Remained 1 (%50,0) benchmark(s) to run. Estimated finish 2022-10-06 10:27 (0h 4m from now) **
+// **************************
+// Benchmark: BenchmarkLINQPerformance.First: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 937f59f3-61bd-4257-9d9b-693c827c56dc.dll --benchmarkName firstordefaultvssingleordefault.BenchmarkLINQPerformance.First --job Default --benchmarkId 1 in /Users/aartung/Projects/firstordefaultvssingleordefault/firstordefaultvssingleordefault/bin/Release/net6.0/937f59f3-61bd-4257-9d9b-693c827c56dc/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.9 (6.0.922.41905), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 288667.00 ns, 288.6670 us/op
+WorkloadJitting  1: 1 op, 9961020333.00 ns, 9.9610 s/op
+
+OverheadJitting  2: 1 op, 291.00 ns, 291.0000 ns/op
+WorkloadJitting  2: 1 op, 10271344792.00 ns, 10.2713 s/op
+
+WorkloadWarmup   1: 1 op, 10280937292.00 ns, 10.2809 s/op
+WorkloadWarmup   2: 1 op, 10262623708.00 ns, 10.2626 s/op
+WorkloadWarmup   3: 1 op, 10245880959.00 ns, 10.2459 s/op
+WorkloadWarmup   4: 1 op, 10270247375.00 ns, 10.2702 s/op
+WorkloadWarmup   5: 1 op, 10319629917.00 ns, 10.3196 s/op
+WorkloadWarmup   6: 1 op, 10256952834.00 ns, 10.2570 s/op
+WorkloadWarmup   7: 1 op, 10262912250.00 ns, 10.2629 s/op
+WorkloadWarmup   8: 1 op, 10268222084.00 ns, 10.2682 s/op
+WorkloadWarmup   9: 1 op, 10387033583.00 ns, 10.3870 s/op
+WorkloadWarmup  10: 1 op, 10367614709.00 ns, 10.3676 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 10368234583.00 ns, 10.3682 s/op
+WorkloadActual   2: 1 op, 10340679625.00 ns, 10.3407 s/op

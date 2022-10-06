@@ -13,6 +13,7 @@ public class BenchmarkLINQPerformance
         {
             _arr[i] = i;
             _data.Add(i);
+            
         }
     }
     [Benchmark]

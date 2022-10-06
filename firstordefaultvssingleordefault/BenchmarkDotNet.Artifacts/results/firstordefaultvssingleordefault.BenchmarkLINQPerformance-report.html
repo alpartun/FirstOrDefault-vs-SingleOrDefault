@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>firstordefaultvssingleordefault.BenchmarkLINQPerformance-20221006-111201</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.2, OS=macOS Monterey 12.6 (21G115) [Darwin 21.6.0]
+Apple M2, 1 CPU, 8 logical and 8 physical cores
+.NET SDK=6.0.401
+  [Host]     : .NET 6.0.9 (6.0.922.41905), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 6.0.9 (6.0.922.41905), Arm64 RyuJIT AdvSIMD
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>Single</td><td>5.688 &mu;s</td><td>0.0036 &mu;s</td><td>0.0032 &mu;s</td>
+</tr><tr><td>First</td><td>5.707 &mu;s</td><td>0.0026 &mu;s</td><td>0.0023 &mu;s</td>
+</tr><tr><td>ListSingle</td><td>8.746 &mu;s</td><td>0.0286 &mu;s</td><td>0.0267 &mu;s</td>
+</tr><tr><td>ListFirst</td><td>8.743 &mu;s</td><td>0.0163 &mu;s</td><td>0.0127 &mu;s</td>
+</tr></tbody></table>
+</body>
+</html>
